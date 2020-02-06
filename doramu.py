@@ -24,7 +24,7 @@ async def on_message(message):
 
     if message.content.startswith("ドラム"):
         voice = await client.join_voice_channel(client.get_channel(voice_channel_id))
-        player = voice.create_ffmpeg_player(test.mp3)
+        player = voice.create_ffmpeg_player(doramu.mp3)
         player.start()
 
 

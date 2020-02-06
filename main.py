@@ -18,6 +18,6 @@ async def on_message(message):
 
     voice = await VoiceChannel.connect(623074022661423114)
     if message.content == ("bgm"):
-        voice.play(discord.FFmpegPCMAudio('test.mp3'))
+        voice.play(discord.FFmpegPCMAudio('doramu.mp3'))
 
 client.run(discord_token)
